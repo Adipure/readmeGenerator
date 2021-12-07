@@ -2,7 +2,6 @@
 const inquirer = require('inquirer');
 const util = require('util');
 const generateMarkdown = require('./utils/generateMarkdown.js');
-const axios = require('axios');
 const fs = require("fs");
 
 // array of questions for user
@@ -20,7 +19,7 @@ const questions = [
  },
  {
   type: 'input',
-  name: 'title',
+  name: 'projectTitle',
   message: "What is the title of your project?",
 
  },
@@ -32,22 +31,22 @@ const questions = [
  },
  {
   type: 'input',
-  name: 'installation'
+  name: 'installation',
   message: "Describe the steps required to install your project for the Installation section.",
  },
  {
   type: 'input',
-  name: 'usage'
+  name: 'usage',
   message: "Please provide instructions and examples of your project.",
  },
  {
   type: 'input',
-  name: 'contribute'
+  name: 'contribute',
   message: "please provide guidelines on how other developers can contribute to your project.",
  },
  {
   type: 'input',
-  name: 'tests'
+  name: 'tests',
   message: "If applicable, provide any tests written for your application and provide examples on how to run them.",
  },
  {
@@ -76,7 +75,8 @@ function writeToFile(fileName, data) {
 // function to initialize program
 function init() {
  inquirer.prompt(
-  questions)
+ 
+ questions)
   .then((answer) => {
    writeToFile("readMeFile.md", generateMarkdown(answer))
   })
