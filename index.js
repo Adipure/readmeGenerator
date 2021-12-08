@@ -81,7 +81,7 @@ function init() {
    writeToFile("readMeFile.md", generateMarkdown(answer))
   })
   .catch((error) => {
-   if (error.isTtyError) {
+  {
     console.log(error)
    }
   })

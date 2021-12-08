@@ -1,7 +1,9 @@
 // function to generate markdown for README
 function generateMarkdown(data) {
-  return ` # ${data.projectTitle}
-![GitHub followers](https://img.shields.io/github/followers/${data.username}?style=social) ![GitHub repo size](https://img.shields.io/github/repo-size/${data.username}/${data.repo})
+  return ` 
+  # ${data.projectTitle}
+  ---------------------------------------------------------
+![GitHub repo size](https://img.shields.io/github/repo-size/${data.username}/${data.repo})
   ## Table of Contents
   - [Description](#description)
   - [Installation](#installation)
@@ -20,7 +22,7 @@ function generateMarkdown(data) {
   ${data.usage}
   ## Contributing
   *If you would like to contribute it, you can follow these guidelines for how to do so.*
-  ${data.contributing}
+  ${data.contribute}
   ## Tests
   *Tests for application and how to run them:*
   ${data.tests}
