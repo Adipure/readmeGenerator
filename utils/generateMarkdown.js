@@ -1,7 +1,6 @@
 // function to generate markdown for README
 function generateMarkdown(data) {
-  return ` 
-  # ${data.projectTitle}
+  return `
   ---------------------------------------------------------
 ![GitHub repo size](https://img.shields.io/github/repo-size/${data.username}/${data.repo})
   ## Table of Contents
