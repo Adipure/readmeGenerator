@@ -102,8 +102,8 @@ We would like you to have more than 200 commits by graduation, so commit early a
 You are required to submit the following:
 
 * A walkthrough video demonstrating the functionality of the application. 
-This is for the video walkthrough
-https://youtu.be/MsDG0VKuGxw 
+This is link for the video walkthrough
+ https://youtu.be/MsDG0VKuGxw 
 
 * A sample README.md file for a project repository generated using your application.
 
